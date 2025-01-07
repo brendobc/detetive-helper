@@ -1,9 +1,9 @@
-import { partidaWrapper } from "../data";
-import { ComponenteCrime } from "../model/ComponenteCrime";
-import { Jogador } from "../model/Jogador";
-import { PalpiteJogador } from "../model/PalpiteJogador";
-import { atribuirComponenteCrimeAoJogadorSePossivel } from "./atribuicao-componente-crime";
-import { gerarComponentesCrimeJogadorMap } from "./palpite";
+import { partidaWrapper } from "../data/index.js";
+import { ComponenteCrime } from "../model/ComponenteCrime.js";
+import { Jogador } from "../model/Jogador.js";
+import { PalpiteJogador } from "../model/PalpiteJogador.js";
+import { atribuirComponenteCrimeAoJogadorSePossivel } from "./atribuicao-componente-crime.js";
+import { gerarComponentesCrimeJogadorMap } from "./palpite.js";
 
 export function analisarHistoricoPalpites() {
     const palpitesFeitos = partidaWrapper.partida.palpitesFeitos;
