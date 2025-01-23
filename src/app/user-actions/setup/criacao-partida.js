@@ -1,5 +1,4 @@
-import { Jogador } from "../../../model/Jogador.js";
-import { criarPartida } from "../../setup/criacao-partida.js";
+import { criarPartida, gerarJogadores, isPodeIniciarPartida, popularSelectsPalpite } from "../../setup/criacao-partida.js";
 
 export function initCriacaoPartida() {
     const btnIniciarPartida = document.getElementById('btn-iniciar-partida');
@@ -8,9 +7,12 @@ export function initCriacaoPartida() {
 }
 
 function listenerIniciarPartida() {
-    criarPartida([
-        new Jogador(1, 'Jogador 1', 3, [], []),
-        new Jogador(1, 'Jogador 2', 3, [], []),
-        new Jogador(1, 'Jogador 3', 3, [], [])
-    ]);
+    if(!isPodeIniciarPartida()) {
+        // TODO tratar erros
+        return;
+    }
+
+    const partida = criarPartida(gerarJogadores());
+
+    popularSelectsPalpite(partida);
 }

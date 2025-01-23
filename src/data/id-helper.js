@@ -1,7 +1,9 @@
-import { ComponenteCrime } from "../model/ComponenteCrime";
+import { ComponenteCrime } from "../model/ComponenteCrime.js";
+import { Palpite } from "../model/Palpite.js";
 
 const idHandler = {
     [ComponenteCrime.name]: 0,
+    [Palpite.name]: 0
 }
 
 function getNextId(resource) {

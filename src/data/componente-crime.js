@@ -1,5 +1,5 @@
-import { ComponenteCrime, TipoComponenteCrime } from "../model/ComponenteCrime";
-import { getNextId } from "./id-helper";
+import { ComponenteCrime, TipoComponenteCrime } from "../model/ComponenteCrime.js";
+import { getNextId } from "./id-helper.js";
 
 let locais, armas, suspeitos;
 
@@ -45,8 +45,7 @@ function gerarSuspeitos() {
 
 /** @returns {Array<ComponenteCrime>} */
 export function getAllComponentesCrime() {
-    return Array.prototype.concat.apply(
-        getArmas(),
+    return getArmas().concat(
         getLocais(),
         getSuspeitos()
     );
@@ -65,4 +64,9 @@ export function getLocais() {
 /** @returns {Array<ComponenteCrime>} */
 export function getSuspeitos() {
     return suspeitos ?? gerarSuspeitos();
+}
+
+export function getComponenteCrimeById(id) {
+    return getAllComponentesCrime()
+        .find((componenteCrime) => componenteCrime.id === id);
 }

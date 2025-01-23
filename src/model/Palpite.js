@@ -1,4 +1,4 @@
-import { ComponenteCrime, TipoComponenteCrime } from "./ComponenteCrime";
+import { ComponenteCrime, TipoComponenteCrime } from "./ComponenteCrime.js";
 
 export class Palpite {
     /** @type {Number} */

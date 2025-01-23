@@ -1,7 +1,7 @@
-import { ComponenteCrime } from "./ComponenteCrime";
-import { Jogador } from "./Jogador";
-import { Palpite } from "./Palpite";
-import { PalpiteJogador } from "./PalpiteJogador";
+import { ComponenteCrime } from "./ComponenteCrime.js";
+import { Jogador } from "./Jogador.js";
+import { Palpite } from "./Palpite.js";
+import { PalpiteJogador } from "./PalpiteJogador.js";
 
 export class Partida {
     /** @type {Array<Jogador} */

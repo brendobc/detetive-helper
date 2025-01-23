@@ -1,6 +1,6 @@
-import { ComponenteCrime } from "../model/ComponenteCrime";
-import { Jogador } from "../model/Jogador";
-import { removerSuposicaoSePossivel } from "./suposicao-componente-crime";
+import { ComponenteCrime } from "../model/ComponenteCrime.js";
+import { Jogador } from "../model/Jogador.js";
+import { removerSuposicaoSePossivel } from "./suposicao-componente-crime.js";
 
 /**
  * @param {Jogador} jogador

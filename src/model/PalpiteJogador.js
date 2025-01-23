@@ -1,6 +1,6 @@
-import { ComponenteCrime } from "./ComponenteCrime";
-import { Jogador } from "./Jogador";
-import { Palpite } from "./Palpite";
+import { ComponenteCrime } from "./ComponenteCrime.js";
+import { Jogador } from "./Jogador.js";
+import { Palpite } from "./Palpite.js";
 
 export class PalpiteJogador {
     /** @type {Jogador} */
@@ -21,7 +21,7 @@ export class PalpiteJogador {
     /**
      * @param {Jogador} jogadorCriador jogador que fez o palpite
      * @param {Palpite} palpite 
-     * @param {Jogador} jogadorResposta jogador que mostrou uma carta em resposta ao palpite feito
+     * @param {Jogador?} jogadorResposta jogador que mostrou uma carta em resposta ao palpite feito
      * @param {ComponenteCrime?} componenteCrimeResposta componenteCrime que foi mostrado como resposta ao palpite
      * @param {Boolean?} isPrecisaAnalisar se os três componentesCrime do palpite tiverem seus donos conhecidos, deve ser 'false'
      */

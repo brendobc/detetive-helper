@@ -2,7 +2,7 @@
  * @file Mantém as referências dos dados utilizados na partida
  */
 
-import { Partida } from "../model/Partida";
+import { Partida } from "../model/Partida.js";
 
 
 /**

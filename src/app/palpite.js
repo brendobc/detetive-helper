@@ -1,12 +1,18 @@
-import { partidaWrapper } from "../data";
-import { ComponenteCrime } from "../model/ComponenteCrime";
-import { Jogador } from "../model/Jogador";
-import { Palpite } from "../model/Palpite";
-import { PalpiteJogador } from "../model/PalpiteJogador";
-import { analisarHistoricoPalpites } from "./analise-palpites";
-import { atribuirComponenteCrimeAoJogadorSePossivel, podeAtribuirComponenteCrimeAoJogador } from "./atribuicao-componente-crime";
-import { criarSuposicaoSePossivel, podeCriarSuposicao } from "./suposicao-componente-crime";
+import { partidaWrapper } from "../data/index.js";
+import { ComponenteCrime } from "../model/ComponenteCrime.js";
+import { Jogador } from "../model/Jogador.js";
+import { Palpite } from "../model/Palpite.js";
+import { PalpiteJogador } from "../model/PalpiteJogador.js";
+import { analisarHistoricoPalpites } from "./analise-palpites.js";
+import { atribuirComponenteCrimeAoJogadorSePossivel, podeAtribuirComponenteCrimeAoJogador } from "./atribuicao-componente-crime.js";
+import { criarSuposicaoSePossivel, podeCriarSuposicao } from "./suposicao-componente-crime.js";
 
+/**
+ * @param {Palpite} palpite 
+ * @param {Jogador} jogadorCriador 
+ * @param {Jogador?} jogadorResposta 
+ * @param {ComponenteCrime?} componenteCrimeResposta 
+ */
 export function registrarPalpite(palpite, jogadorCriador, jogadorResposta, componenteCrimeResposta) {
     const componentesCrimeJogadorMap = gerarComponentesCrimeJogadorMap(palpite);
 

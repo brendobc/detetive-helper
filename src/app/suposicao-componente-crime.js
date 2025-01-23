@@ -1,6 +1,6 @@
-import { ComponenteCrime } from "../model/ComponenteCrime";
-import { Jogador } from "../model/Jogador";
-import { Palpite } from "../model/Palpite";
+import { ComponenteCrime } from "../model/ComponenteCrime.js";
+import { Jogador } from "../model/Jogador.js";
+import { Palpite } from "../model/Palpite.js";
 
 /**
  * @param {Jogador} jogadorRespostaPalpite 

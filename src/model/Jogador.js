@@ -1,4 +1,4 @@
-import { ComponenteCrime } from "./ComponenteCrime";
+import { ComponenteCrime } from "./ComponenteCrime.js";
 
 export class Jogador {
     /** @type {Number} */

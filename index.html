@@ -9,6 +9,70 @@
     <script src='index.js' type="module" defer></script>
 </head>
 <body>
+    <section id="section-criacao-partida">
+        <div id="infos-jogadores">
+            <div class="infos-jogador js-infos-jogador">
+                <label>
+                    Nome:
+                    <input type="text" name="nome" autocomplete="off">
+                </label>
     
+                <label>
+                    Quantidade de cartas recebidas:
+                    <input type="number" name="quantidadeComponentesCrime" autocomplete="off">
+                </label>
+    
+                <button class="js-excluir-jogador">
+                    X
+                </button>
+            </div>
+        </div>
+
+        <button id="btn-criar-jogador">Adicionar jogador</button>
+
+        <button id="btn-iniciar-partida">Iniciar</button>
+    </section>
+
+    <section id="section-resposta">
+
+    </section>
+
+    <section id="section-palpite">
+        <label>
+            Jogador que fez o palpite:
+            <select class="js-select-palpite" data-palpite="JOGADOR"></select>
+        </label>
+        
+        <label>
+            Arma:
+            <select class="js-select-palpite" data-palpite="ARMA"></select>
+        </label>
+
+        <label>
+            Suspeito:
+            <select class="js-select-palpite" data-palpite="SUSPEITO"></select>
+        </label>
+        
+        <label>
+            Local:
+            <select class="js-select-palpite" data-palpite="LOCAL"></select>
+        </label>
+
+        <label>
+            Jogador que respondeu ao palpite:
+            <select class="js-select-palpite" data-palpite="JOGADOR_RESPOSTA">
+                <option value="0">Ninguém</option>
+            </select>
+        </label>
+        
+        <label>
+            Carta-resposta do palpite:
+            <select class="js-select-palpite" data-palpite="COMPONENTE_CRIME_RESPOSTA">
+                <option value="0">Não tive acesso</option>
+            </select>
+        </label>
+
+        <button id="btn-registrar-palpite">REGISTRAR PALPITE</button>
+    </section>
 </body>
 </html>
